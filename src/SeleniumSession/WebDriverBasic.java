@@ -14,6 +14,7 @@ public class WebDriverBasic {
 		String title = driver.getTitle();//get title
 		System.out.println(title);
 		
+		
 		if(title.equals("Google")) {//validation point
 			System.out.println("correct title");
 		}
@@ -25,8 +26,5 @@ public class WebDriverBasic {
 		
 	//	System.out.println(driver.getPageSource());
 		driver.quit();
-		
-		
-	}
-
+}
 }

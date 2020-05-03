@@ -11,6 +11,7 @@ public class FunctionInJava {
 		System.out.println(s1);
 		int d = fj.division(30, 20);
 		System.out.println(d);
+		System.out.println(fj.mul());
 		//main method is void --never returns a value
 		
 	}
@@ -37,11 +38,16 @@ public class FunctionInJava {
 	}
 	//return type = int
 	public int  division(int x,int y) {
-		System.out.println("disision method");
+		System.out.println("division method");
 		int d = x/y;
-		return d;
+		return d;	
 		
-		
+	}
+	public int mul() {
+		int val1=10;
+		int val2=20;
+		int val3=val1*val2;
+		return val3;
 		
 	}
 

@@ -17,5 +17,5 @@ public class LocalVsGlobleVeriable1 {
 	public void test() {
 		System.out.println("This is my local veriable");
 	}
-
+	
 }

@@ -1,0 +1,10 @@
+<suite name = "TestNG Session Test Automation Suite">
+<test name = "Different Feature Files Test">
+    <classes>
+       <class name = "OopsConceptQuestion.TestNGFeature"/>
+       <class name = "OopsConceptQuestion.InvocationCount"/>      
+       <class name = "OopsConceptQuestion.ExceptionTimeOutTest"/>
+    </classes> 
+
+</test>
+</suite>

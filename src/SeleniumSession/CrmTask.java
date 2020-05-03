@@ -12,6 +12,9 @@ public class CrmTask {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ara\\Desktop\\java jar files\\chromedriver.exe");
 		 WebDriver driver = new ChromeDriver();
+		 driver.manage().window().maximize();
+		 driver.manage().deleteAllCookies();
+		 
 		 driver.get("https://crmpro.com/index.html");
 		 driver.findElement(By.name("username")).sendKeys("Araf16");
 		 driver.findElement(By.name("password")).sendKeys("tester123");
@@ -20,7 +23,7 @@ public class CrmTask {
 		js.executeScript("arguments[0].click();" ,loginbutn);
 		
 		driver.switchTo().frame("mainpanel");
-		Actions action = new Actions(driver);
+		Actions action = new Actions(driver);		
 		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Tasks')]"))).build().perform();
 		driver.findElement(By.xpath("//a[contains(text(),'New Task')]")).click();
 		driver.findElement(By.name("title")).sendKeys("Google");

@@ -6,14 +6,18 @@ public class StaticAndNonStatic {
 	
 	public static void main(String[] args) {
 		//how to call static methods and variable
-		//1.Direct calling or calling by classes
+		//ANS.Direct calling or calling by classes
 		StaticAndNonStatic.sendmail();
+		StaticAndNonStatic.login();
 		System.out.println(StaticAndNonStatic.age);
 		System.out.println(age);
 		StaticAndNonStatic ss = new StaticAndNonStatic();
 		System.out.println(ss.name);
 		ss.sum();
 		sendmail();
+		login();
+		ss.homepage();
+		
 		
 	}
 	public void sum() {//local variable non static method
@@ -22,5 +26,10 @@ public class StaticAndNonStatic {
 	public static void sendmail() {//local static variable method
 		System.out.println("sendmail method");
 	}
-
+	public static void login() {
+		System.out.println("Login Methods");
+	}
+    public void homepage() {
+    	System.out.println("Home Page");
+    }
 }

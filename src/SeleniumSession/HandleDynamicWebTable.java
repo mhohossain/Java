@@ -5,12 +5,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HandleDynamicWebTable {
 
 	public static void main(String[] args) throws Exception {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ara\\Desktop\\java jar files\\chromedriver.exe");
-		 WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\ara\\Desktop\\java jar files\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
 		 driver.get("https://crmpro.com/index.html");
 		 driver.findElement(By.name("username")).sendKeys("Araf16");
 		 driver.findElement(By.name("password")).sendKeys("tester123");
@@ -19,7 +20,7 @@ public class HandleDynamicWebTable {
 		 js.executeScript("arguments[0].click();" ,loginbutn);
 		 
 		 driver.switchTo().frame("mainpanel");
-		 
+		 		 
 		 driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
          Thread.sleep(3000);
          driver.findElement(By.xpath("//a[contains(text(),'Ara')]//parent::td//preceding-sibling::td//input[@name='contact_id']")).click();

@@ -10,14 +10,11 @@ public class HashTableConcept {
 		ht.put("1", "Month of January");
 		ht.put("2", "Month of Feb");
 		ht.put("3", "Month of Mar");
-		System.out.println(ht.size());
-		System.out.println(ht.get("3"));
-		
-		
+		System.out.println(ht);	
 			
-		}
+  }
 			
-		}
+}
 
 	
 

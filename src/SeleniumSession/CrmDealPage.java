@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
@@ -13,8 +14,8 @@ public class CrmDealPage {
 
 	public static void main(String[] args) throws Exception {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ara\\Desktop\\java jar files\\chromedriver.exe");
-		 WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\ara\\Desktop\\java jar files\\geckodriver.exe");
+		 WebDriver driver = new FirefoxDriver();
 		 driver.get("https://crmpro.com/index.html");
 		 driver.findElement(By.name("username")).sendKeys("Araf16");
 		 driver.findElement(By.name("password")).sendKeys("tester123");
@@ -33,6 +34,7 @@ public class CrmDealPage {
          driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
          Thread.sleep(3000);
          driver.findElement(By.xpath("//td[@id='tab_vevents']")).click();
+        
          
          driver.quit();
          

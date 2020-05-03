@@ -39,6 +39,8 @@ public class FrameHandle {
 		 	
 		//handle frame
 		driver.switchTo().frame("mainpanel");
+		//handle windows
+		driver.getWindowHandle();
 		
 		driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
 		

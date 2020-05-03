@@ -21,10 +21,10 @@ public class SwitchFrame {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get("https://crmpro.com/");
-		 driver.findElement(By.name("username")).sendKeys("Araf16");
-		 driver.findElement(By.name("password")).sendKeys("tester123");
-		 WebElement loginbutn = driver.findElement(By.xpath("//input[@type='submit']"));
-		 JavascriptExecutor js = (JavascriptExecutor)driver;
+		driver.findElement(By.name("username")).sendKeys("Araf16");
+		driver.findElement(By.name("password")).sendKeys("tester123");
+		WebElement loginbutn = driver.findElement(By.xpath("//input[@type='submit']"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();" ,loginbutn);
 		
 		

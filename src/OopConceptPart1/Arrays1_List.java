@@ -2,8 +2,6 @@ package OopConceptPart1;
 
 import java.util.ArrayList;
 
-import org.jboss.netty.util.internal.SystemPropertyUtil;
-
 public class Arrays1_List {
 
 	public static void main(String[] args) {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Session Test Automation Suite]">
+  <test name="Different Feature Files Test(failed)">
+    <classes>
+      <class name="OopsConceptQuestion.TestNGFeature">
+        <methods>
+          <include name="homepageTest"/>
+          <include name="regpageTest"/>
+          <include name="searchpageTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- OopsConceptQuestion.TestNGFeature -->
+    </classes>
+  </test> <!-- Different Feature Files Test(failed) -->
+</suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->
